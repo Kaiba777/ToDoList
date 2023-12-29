@@ -13,7 +13,9 @@
             @include('layouts.partials.nav')
         </section>
         <div class="main">
-            @yield('content')
+            <div class="container">
+                @yield('content')
+            </div>
         </div>
     </div>
     

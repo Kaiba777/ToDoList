@@ -15,3 +15,5 @@ use App\Http\Controllers\SpotController;
 */
 
 Route::get('/', [SpotController::class, 'index'])->name('index');
+Route::get('/all', [SpotController::class, 'AllSpot'])->name('all');
+

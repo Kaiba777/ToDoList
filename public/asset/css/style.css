@@ -80,10 +80,63 @@ a .title {
     line-height: 55px;
 }
 
+/****************** globale header pour chaque page  **********************/
+#header {
+    height: 50px;
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    background: transparent;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+#header .content-icon {
+    display: flex;
+    background: transparent;
+
+}
+
+.content-icon #icon {
+    line-height: 50px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.content-icon .title {
+    line-height: 60px;
+    font-size: 2rem;
+    color: blue;
+    text-transform: uppercase;
+}
+
 /****************** Main ******************/
 
 .main {
     position: absolute;
     left: 320px;
     min-height: 100vh;
+    width: calc(100% - 320px);
+}
+
+/****************** Pour la page Tâche ******************/
+
+.card1 {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 5px;
+    background: white;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.card1 span {
+    margin-left: 5px;
+}
+
+.card1 #boolean {
+    position: absolute;
+    right: 10px;
 }
