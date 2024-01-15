@@ -15,16 +15,16 @@
 }
 body {
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .container-global {
-    margin: 10px;
+    margin: 0;
 }
 
 .content {
     width: 100%;
     position: relative;
-    border-top: 10px solid white;
 }
 
 /****************** Navigation ******************/
@@ -80,10 +80,9 @@ a .title {
     line-height: 55px;
 }
 
-/****************** globale header pour chaque page  **********************/
+/****************** globale header  **********************/
 #header {
     height: 50px;
-    border: 1px solid red;
     width: 100%;
     display: flex;
     background: transparent;
@@ -99,7 +98,6 @@ a .title {
 
 .content-icon #icon {
     line-height: 50px;
-    min-width: 60px;
     text-align: center;
 }
 
@@ -108,15 +106,18 @@ a .title {
     font-size: 2rem;
     color: blue;
     text-transform: uppercase;
+    margin-left: 5px;
 }
 
 /****************** Main ******************/
 
 .main {
     position: absolute;
-    left: 320px;
+    left: 300px;
     min-height: 100vh;
-    width: calc(100% - 320px);
+    width: calc(100% - 300px);
+    background: #00d4ff;
+    padding: 30px 20px 10px 20px;
 }
 
 /****************** Pour la page Tâche ******************/
@@ -125,18 +126,60 @@ a .title {
     position: relative;
     height: 50px;
     width: 100%;
-    border: 1px solid red;
     border-radius: 5px;
     background: white;
     padding: 10px;
     margin-bottom: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .card1 span {
-    margin-left: 5px;
+    margin-left: 12px;
 }
 
-.card1 #boolean {
+/********************* Permet de supprimer des tâches **********************/
+.card1 #Suppression {
     position: absolute;
+    right: 5px;
+    background: transparent;
+}
+
+#Suppression button {
+    border: none;
+    background: transparent;
+}
+
+#form {
+    background: transparent;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 75px);
+    border-radius: 5px;
+    
+}
+
+#form #button1, #form #button2 {
+    position: absolute;
+    top: 10px;
+    z-index: 10;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+}
+
+#form #button1 {
+    left: 10px;
+}
+
+#form #button2 {
     right: 10px;
+}
+
+#form #edit {
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    position: relative;
 }

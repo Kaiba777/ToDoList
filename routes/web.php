@@ -15,5 +15,12 @@ use App\Http\Controllers\SpotController;
 */
 
 Route::get('/', [SpotController::class, 'index'])->name('index');
-Route::get('/all', [SpotController::class, 'AllSpot'])->name('all');
 
+Route::get('/all', [SpotController::class, 'AllSpot'])->name('all');
+Route::post('/all', [SpotController::class, 'Store']);
+
+Route::get('/planifier', [SpotController::class, 'planifier'])->name('planifier');
+Route::post('/planifier', [SpotController::class, 'Store']);
+Route::delete('/planifier/{spot}', [SpotController::class, 'destroy'])->name('destroy');
+
+Route::get('/important', [SpotController::class, 'important'])->name('important');
