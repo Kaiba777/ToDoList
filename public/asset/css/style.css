@@ -77,7 +77,7 @@ a #icon {
 }
 
 a .title {
-    line-height: 55px;
+    line-height: 50px;
 }
 
 /****************** globale header  **********************/
@@ -102,11 +102,49 @@ a .title {
 }
 
 .content-icon .title {
-    line-height: 60px;
+    line-height: 50px;
     font-size: 2rem;
     color: blue;
     text-transform: uppercase;
     margin-left: 5px;
+}
+
+#end .bar {
+    font-size: 2.5rem;
+}
+
+/******************** les icons de la navigation ********************/
+#icon .brightness1{
+    font-size: 1.5rem;
+}
+
+#icon .star1{
+    font-size: 1.5rem;
+}
+
+#icon .calendar1{
+    font-size: 1.4rem;
+}
+
+#icon .house1{
+    font-size: 1.7rem;
+}
+
+/***************************** Les icons de main *****************************/
+#icon .brightness{
+    font-size: 2rem;
+}
+
+#icon .star{
+    font-size: 2rem;
+}
+
+#icon .calendar {
+    font-size: 2rem;
+}
+
+#icon .house {
+    font-size: 2rem;
 }
 
 /****************** Main ******************/
@@ -150,6 +188,10 @@ a .title {
     background: transparent;
 }
 
+#Suppression .trash3 {
+    color: red;
+}
+
 #form {
     background: transparent;
     height: 50px;
@@ -173,8 +215,17 @@ a .title {
     left: 10px;
 }
 
+#button1 .plus {
+    font-size: 1.3rem;
+}
+
 #form #button2 {
     right: 10px;
+    bottom: 4px;
+}
+
+#button2 .alarm {
+    font-size: 1.1rem;
 }
 
 #form #edit {

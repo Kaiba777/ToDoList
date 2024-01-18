@@ -7,12 +7,12 @@
     <div id="header">
         <div class="content-icon">
             <span id="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                <i class="bi bi-house-door house"></i>
             </span>
             <span class="title">@yield('title')</span>
         </div>
         <span id="end">
-            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            <i class="bi bi-list bar"></i>
         </span>
     </div>
     <!-- Affiche les tâches contenu dans la Base de données -->
@@ -30,7 +30,7 @@
     <form action="" method="post" id="form">
         @csrf
         <button id="button1">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
+            <i class="bi bi-plus-lg plus"></i>
         </button>
         <input type="text" name="edit" id="edit" placeholder="Ajouter une tâche">
     </form>
